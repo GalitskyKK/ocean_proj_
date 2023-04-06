@@ -157,6 +157,10 @@ button {
   border: 1px solid rgba(0, 0, 0, 0.3490196078);
   border-radius: 20px;
   font-weight: 700;
+  transition-duration: 500ms;
+}
+button:hover {
+  background-color: rgb(240, 240, 240);
 }
 
 .jungle {
@@ -177,7 +181,7 @@ button {
 .header {
   background: linear-gradient(180deg, rgba(87, 136, 107, 0), #57A598, #57A598, #472B37, #472B37, #472B37, #472B37, #472B37, #472B37);
   padding: 15px;
-  border-radius: 15px 15px 25px 25px;
+  border-radius: 0px 0px 25px 25px;
 }
 
 .header-nav {
@@ -189,14 +193,21 @@ button {
 }
 
 .header-nav-item {
-  background: linear-gradient(180deg, rgba(87, 165, 152, 0.4039215686), #583941, #583941);
   z-index: 111;
+  padding: 15px 0px;
+}
+.header-nav-item a {
+  color: white;
+  background: linear-gradient(180deg, rgba(87, 165, 152, 0.4196078431), rgba(88, 57, 65, 0.6705882353), #583941);
+  z-index: 111;
+  background-color: #583941;
   text-transform: uppercase;
   padding: 15px 30px;
   border-radius: 10px;
   font-weight: 400;
   box-shadow: 5px 6px 15px rgba(0, 0, 0, 0.397);
+  transition-duration: 500ms;
 }
-.header-nav-item a {
-  color: white;
+.header-nav-item a:hover {
+  background-color: #835661;
 }
